@@ -1,0 +1,709 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+h2{
+    font-size: 36px;
+}
+body{
+    font-family: roboto,sans-serif;
+}
+a:link{
+    text-decoration: none;
+}
+
+.container{
+    width: 1140px;
+    margin: 0px auto;
+}
+h2.first-block{
+    position: relative;
+    padding-left: 24px;
+    font-weight: normal;
+}
+h2.first-block:before{
+    content: ' ';
+    width: 10px;
+    height: 35px;
+    background-color: #4e5a62;
+    display: inline-block;
+    margin-right: 20px;
+    position: absolute;
+    top: 0;
+    left: 1px;
+}
+header{
+    height: 81px;
+    
+     background: black;
+}
+header h1{
+    line-height: 81px;
+}
+
+header .container ul{
+    height: 81px;
+}
+
+header .container ul li{
+    display: inline;
+    line-height: 81px;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+header .container ul li a{
+    line-height: 30px;
+    display: inline-block;
+    padding: 0 12px;
+    color: #6a7172;
+    text-transform: uppercase;/* viet hoa*/
+    border: 2px solid transparent;
+    border-radius: 3px;
+    margin-left:16px ;
+    font-size: 14px;
+    
+   
+    
+    
+}
+header .container ul li a:hover{
+   border-color: #6a7172;
+}
+header .container ul li a.active{
+    border-color: #23b7a4;
+    color: #23b7a4;
+}
+header .container ul li a:active{
+    border-color: #23b7a4;
+    color: #23b7a4;
+}
+
+
+/* banner*/
+#banner {
+height: 660px;
+background-image: url(./bg.jpg);
+background-size: auto 100%;
+width: 100%;
+background-repeat: no-repeat;
+background-size: cover;
+}
+#banner .container {
+    position: relative;
+    height: 660px;
+}
+#banner .container div {
+    max-width: 700px;
+    padding-top: 222px;
+}
+#banner .container h2{
+    line-height: 42px;
+    font-weight: normal;
+    color: aliceblue;
+}
+#banner .container p{
+    font-size: 16px;
+    line-height: 26px;
+    color: aliceblue;
+    margin-top: 26px;
+}
+
+#banner .container div > a{
+    line-height: 40px;
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+    display: inline-block;  
+    height: 44px;
+    border: 2px solid white;
+    border-radius:3px ;
+    padding: 0 26px;
+    margin-top: 36px;
+    margin-right: 11px;
+}
+#banner .container div > a:hover {
+    border-color: #23b7a4;
+    background-color: #23b7a4;
+}
+#banner .container ul {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+#banner .container ul li {
+    display: inline-block;
+}
+
+#banner .container ul li a {
+    display: inline-block;
+    border: 2px solid white;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    text-indent: -1000000px;
+    margin-left: 9px;
+}
+
+#banner .container ul li a.active {
+background-color: white;
+}
+
+/*About*/
+#about {
+    height: 587px;
+    border: 1px solid;
+    border-color:transparent ;
+    border-bottom-color:#dde1e4 ;
+}
+#about .container {
+    margin-top: 83px;
+}
+#about .container h2{
+    text-transform: uppercase;
+}
+#about .container > div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 56px;
+}
+#about .container > div > div p{
+    line-height: 26px;
+    font-size: 16px;
+    color: #b0b1b3;
+}
+#about .container > div > div > p:first-child {
+    margin-bottom: 10px;
+}
+#about .container > div > div > ul {
+    margin-top: 99px;
+}
+#about .container > div > div:first-child{
+
+width: 654px;
+
+}
+#about .container > div > div:last-child{
+    width: 457px;
+    
+}
+
+#about ul{
+    list-style: none;
+    margin-top: 20px;
+}
+#about ul li {
+    display: inline-block;
+    padding-right: 1px;
+}
+#about ul li a {
+    display: inline-block;
+    text-indent: -100000px;
+    width: 60px;
+    height: 60px;
+    background-color: #c8cdd8;
+}
+#about ul li:nth-child(1) a {
+    background-image: url(./icon-s/fb.png);
+    background-position: center;
+    background-repeat: no-repeat;
+        
+}
+#about ul li:nth-child(2) a {
+    background-image: url(./icon-s/1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+        
+}
+#about ul li:nth-child(3) a {
+    background-image: url(./icon-s/D.png);
+    background-position: center;
+    background-repeat: no-repeat;
+        
+}
+#about ul li:nth-child(4) a {
+    background-image: url(./icon-s/e.png);
+    background-position: center;
+    background-repeat: no-repeat;
+        
+}
+#about ul li:nth-child(5) a {
+    background-image: url(./icon-s/L.png);
+    background-position: center;
+    background-repeat: no-repeat;
+        
+}
+#about ul li a:hover{
+    background-color: #d0d5d9;
+}
+
+/**/
+#about ol {
+    counter-reset: about;
+    
+}
+#about ol li {
+    list-style: none;
+    position: relative;
+    padding-left: 67px;
+    margin-bottom: 19px;
+    
+}
+#about ol li:before {
+    display: inline-block;
+    counter-increment: about;
+    content: counters(about,'.',decimal-leading-zero);
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #23b7a4;
+    color: white;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    left: 0px;
+    top: 0px;
+    
+}
+#about ol li h3 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: initial;
+}
+#about ol li p {
+    font-size: 16px;
+    color:#b0b1b3 ;
+    line-height: 26px;
+}
+
+
+
+/*Team*/
+#team {
+    padding-bottom: 100px;
+}
+#team.container h2 {
+    font-size: 36px;
+    line-height: 42px;
+    margin-top:93px ;
+    margin-bottom: 61px;
+    text-transform: uppercase;
+}
+#team-list{
+    display: flex;
+    justify-content: space-between;
+}
+#team-list > div {
+    flex-basis: 263px;
+    position: relative;
+    background-color: white;
+}
+#team-list > div img{
+    display: block;
+}
+#team-list > div > div.infor{
+    width: 263px;
+    height: 74px;
+    background-color:#e1e6ea ;
+}
+#team-list > div > div.infor h4 {
+    line-height: 35px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 550;
+    color: #292f36;
+    padding-top: 11px;
+    padding-left: 14px;
+}
+#team-list > div > div.infor p {
+    font-size: 14px;
+    color:#8d8f92;
+    padding-left: 14px;
+}
+#team-list > div:hover img {
+    opacity: 0.6;
+}
+#team-list > div:hover .mark{
+    display: block;
+}
+#team-list > div:hover > div.infor {
+    background-color:  #3a454d;
+}
+
+#team-list > div:hover > div.infor > h4{
+
+    color: white;
+}
+#team-list > div:hover > div.infor > p{
+    color: white;
+}
+
+
+#team-list > div > .mark{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    display: none;
+    top: 125px;
+    left: 59px;
+}
+#team-list > div > .mark ul{
+    letter-spacing: -3px;
+}
+#team-list > div > .mark ul li{
+    display: inline-block;
+}
+#team-list > div > .mark ul li a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #292f36;
+    text-indent: -10000000px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#team-list > div > .mark ul li:nth-child(1) a{
+    background-image: url(./icon-s/fb.png);
+}
+#team-list > div > .mark ul li:nth-child(2) a{
+    background-image: url(./icon-s/L.png);
+}
+#team-list > div > .mark ul li:nth-child(3) a{
+    background-image: url(./icon-s/e.png);
+}
+
+#team-list > div > .mark ul li a:hover{
+    background-color: #3a454d;
+}
+
+/**************WORK**************/
+#work {
+    background-color: #3a454d;
+    padding-bottom: 60px;
+    padding-top: 83px;
+}
+#work .container h2 {
+    color: white;
+    padding-bottom: 61px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+#img-work{
+    width: 1140px;
+    height: 560px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+#img-work > div > img {
+    display: inline-block;
+}
+#work .container div > div {
+    position: relative;
+}
+#work .container div > div > .mask{
+    display: none;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(41, 47, 54, 0.5)
+}
+
+#work .container div > div > .mask h4 {
+    margin-top: 205px;
+    display: inline-block;
+    color: white;
+   font-size: 18px;
+   font-weight: lighter;
+   text-transform: uppercase;
+   height: 60px;
+   width: 100%;
+   line-height: 60px;
+   background-color: #292f36;
+   text-indent: 20px;
+
+}
+
+#work .container div > div:hover > .mask{
+    display: block;
+}
+
+
+#work .container > div > button{
+    margin-left: 496px;
+    margin-top: 60px;
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 22px;
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 7px;
+}
+
+#work .container > div > button:hover{
+    background-color: #23b7a4;
+    border-color: #23b7a4;
+    cursor: pointer;
+}
+
+
+/*whatwedo*/
+#whatwedo {
+    margin-bottom: 158px;
+}
+#whatwedo h2 {  
+    margin-top:83px;
+    text-transform: uppercase;
+    
+}
+
+#whatwedo  div ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#whatwedo div ul li {
+    flex-basis: 263px;
+    text-align: center;
+    list-style: none;
+}
+#whatwedo div ul li img{
+    padding-bottom: 35px;
+    padding-top: 91px;
+}
+#whatwedo div ul li h4 {
+    color: #292f36;
+    font-size: 17px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+#whatwedo div ul li p {
+    font-size: 16px;
+    color: #8d8f92;
+    line-height: 26px;
+    padding-top: 24px;
+}
+
+
+/*future*/
+#future {
+    background-color: #3a454d;
+    padding-top: 88px ;
+    
+}
+#future h2 {
+    color: white;
+    font-weight: normal;
+    padding-bottom: 80px;
+}
+#future .container > div {
+    display: flex;
+    justify-content: space-between;
+}
+#future .container div > div{
+    flex-basis: 360px;
+    color: #cfd1d3;
+}
+#future .container div > div img {
+    display: block;
+} 
+#future .container div > div > h4 {
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 42px;
+    height: 42px;
+    margin-top: 47px;
+}
+
+#future .container div > div > p {
+    margin-bottom: 120px;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+#contact-footer .container:first-child{
+    margin-top: 67px;
+}
+#contact-footer .container:first-child h2 {
+    text-transform: uppercase;
+    padding-bottom: 61px;
+}
+#infor-contact{
+    
+}
+#infor-contact > h2 {
+    font-size: 20px;
+    height: 26px;
+    font-weight: normal;
+    padding: 57px 0;
+    
+}
+#infor-contact > p{
+    width: 555px;
+    font-size: 16px;
+    color: #b0b1b3;
+    line-height: 26px;
+}
+
+
+
+
+#contact-footer #map{
+    background-image: url(./map.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 347px;
+}
+#contact-footer #flex-box {
+    display: flex;
+}
+#contact-footer #box-contact {
+    width: 555px;
+    height: 490px;
+    margin-top: -130px;
+    background-color: white;
+}
+#contact-footer #box-contact > div{
+    width: 495px;
+    margin: 0 auto;
+}
+#contact-footer #box-contact .two-col{
+    display: flex;
+    justify-content: space-between;
+}
+#contact-footer #box-contact .two-col div {
+    width: calc((100% - 16px) / 2);
+}
+#contact-footer #box-contact .two-col div label{
+    display: block;
+    font-size: 14px;
+    line-height: 26px;
+    color: #9fa1a3;
+    text-transform: uppercase;
+    padding-top: 24px;
+}
+#contact-footer #box-contact .two-col div input{
+    width: 100%;
+    height: 44px;
+    background-color: #eaeef1;
+    border-color:#eaeef1;
+    border: none;
+    outline: none;
+    padding: 12px;
+    font-size: 16px;
+    
+
+}
+#contact-footer #box-contact > div:nth-child(2){
+   
+    
+}
+#contact-footer #box-contact > div:nth-child(2) label{
+    text-transform: uppercase;
+    display: block;
+    color: #9fa1a3;
+    font-size: 14px;
+    line-height: 26px; 
+    margin-top: 24px;
+    margin-bottom: 4px;
+}
+#contact-footer #box-contact > div:nth-child(2) textarea{
+    width: 100%;
+    height: 159px;
+    background-color: #eaeef1;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    padding: 12px;
+    font-size: 16px;
+}
+
+#contact-footer #box-contact > div > button{
+    width: 151px;
+    height: 44px;
+    font-size: 14px;
+    color: white;
+    line-height: 28px;
+    text-transform: uppercase;
+    background-color: #23b7a4;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+#contact-footer #box-contact > div > button:hover{
+    background-color: #257066;
+}
+
+/*footer*/
+footer{
+    height: 95px;
+    width: 100%;
+    background-color: #3a454d;
+
+}
+
+footer > .container {
+    display: flex;
+  justify-content: space-between;
+}
+
+footer > .container > h2 {
+    font-size: 14px;
+    line-height: 95px;
+    color: white;
+    font-weight: normal;
+}
+
+footer > .container ul {
+    list-style: none;
+
+}
+footer > .container ul li {
+    display: inline-block;
+    line-height: 95px;
+    
+}
+footer > .container ul li a{
+    
+    margin-left: 10px;
+    height: 20px;
+    width: 30px;
+    display: inline-block;
+    text-indent: -1000000px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 20px;
+    vertical-align: middle;
+}
+
+footer > .container ul li:nth-child(1) a{
+    background-image: url(./icon-s/L.png);
+
+}
+footer > .container ul li:nth-child(2) a{
+    background-image: url(./icon-s/fb.png);
+
+}
+footer > .container ul li:nth-child(3) a{
+    background-image: url(./icon-s/1.png);
+
+}
+footer > .container ul li:nth-child(4) a{
+    background-image: url(./icon-s/D.png);
+
+}
+footer > .container ul li:nth-child(5) a{
+    background-image: url(./icon-s/e.png);
+
+}
