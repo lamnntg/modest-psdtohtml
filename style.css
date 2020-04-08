@@ -15,8 +15,9 @@ a:link{
 }
 
 .container{
-    width: 1140px;
+    max-width: 1170px;
     margin: 0px auto;
+    padding: 0px 15px;
 }
 h2.first-block{
     position: relative;
@@ -36,8 +37,8 @@ h2.first-block:before{
 }
 header{
     height: 81px;
+    background: black;
     
-     background: black;
 }
 header h1{
     line-height: 81px;
@@ -154,7 +155,7 @@ background-color: white;
 
 /*About*/
 #about {
-    height: 587px;
+    min-height: 587px;
     border: 1px solid;
     border-color:transparent ;
     border-bottom-color:#dde1e4 ;
@@ -174,26 +175,26 @@ background-color: white;
     line-height: 26px;
     font-size: 16px;
     color: #b0b1b3;
+    text-align: justify;
 }
 #about .container > div > div > p:first-child {
     margin-bottom: 10px;
 }
-#about .container > div > div > ul {
-    margin-top: 99px;
-}
+
 #about .container > div > div:first-child{
 
-width: 654px;
+width: 58%;
 
 }
 #about .container > div > div:last-child{
-    width: 457px;
+   width: 38%;
     
 }
 
 #about ul{
     list-style: none;
-    margin-top: 20px;
+    margin: 20px 0;
+
 }
 #about ul li {
     display: inline-block;
@@ -294,18 +295,20 @@ width: 654px;
 }
 #team-list{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 #team-list > div {
-    flex-basis: 263px;
+   width: calc((100% - 90px) / 4);
     position: relative;
     background-color: white;
 }
 #team-list > div img{
     display: block;
+    width: 100%;
 }
 #team-list > div > div.infor{
-    width: 263px;
+    width: 100%;
     height: 74px;
     background-color:#e1e6ea ;
 }
@@ -316,12 +319,12 @@ width: 654px;
     font-weight: 550;
     color: #292f36;
     padding-top: 11px;
-    padding-left: 14px;
+    padding-left: 5%;
 }
 #team-list > div > div.infor p {
     font-size: 14px;
     color:#8d8f92;
-    padding-left: 14px;
+    padding-left: 5%;
 }
 #team-list > div:hover img {
     opacity: 0.6;
@@ -392,36 +395,44 @@ width: 654px;
     font-weight: normal;
 }
 #img-work{
-    width: 1140px;
+    max-width: 1170px;
     height: 560px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: space-between;
+    justify-content: space-around;
+    align-content: space-around;
+}
+#img-work > div{
+    max-width: calc((100% - 20px) / 3);
+    position: relative;
 }
 #img-work > div > img {
     display: inline-block;
+    max-width: 100%;
 }
 #work .container div > div {
-    position: relative;
+    
 }
 #work .container div > div > .mask{
-    display: none;
+   display: none;
    position: absolute;
    top: 0;
    left: 0;
-   width: 100%;
-   height: 100%;
    background-color: rgba(41, 47, 54, 0.5);
    background-image: url(./icon-s/plus.png);
-   background-position: center 93px ;
+   background-position: center calc((100% - 65px) / 2) ;
    background-repeat: no-repeat;
+   width: 100%;
+   height: 100%;
+
 }
 
 #work .container div > div > .mask h4 {
-    margin-top: 205px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
     display: inline-block;
-    color: white;
+   color: white;
    font-size: 18px;
    font-weight: lighter;
    text-transform: uppercase;
@@ -440,7 +451,8 @@ width: 654px;
 
 
 #work .container > div > button{
-    margin-left: 496px;
+    display: block;
+    margin: 0 auto;
     margin-top: 60px;
     font-size: 14px;
     color: white;
@@ -472,7 +484,7 @@ width: 654px;
 #whatwedo  div ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 #whatwedo div ul li {
@@ -495,6 +507,8 @@ width: 654px;
     color: #8d8f92;
     line-height: 26px;
     padding-top: 24px;
+    
+
 }
 
 
@@ -514,18 +528,18 @@ width: 654px;
     justify-content: space-between;
 }
 #future .container div > div{
-    flex-basis: 360px;
+    width: calc((100% - 60px) / 3);
     color: #cfd1d3;
 }
 #future .container div > div img {
     display: block;
+    width: 100%;
 } 
 #future .container div > div > h4 {
     font-weight: normal;
     text-transform: uppercase;
     font-size: 18px;
     line-height: 42px;
-    height: 42px;
     margin-top: 47px;
 }
 
@@ -543,17 +557,17 @@ width: 654px;
     padding-bottom: 61px;
 }
 #infor-contact{
-    
+    max-width: 555px;
 }
 #infor-contact > h2 {
     font-size: 20px;
-    height: 26px;
+    min-height: 26px;
     font-weight: normal;
     padding: 57px 0;
     
 }
 #infor-contact > p{
-    width: 555px;
+    width: 100%;
     font-size: 16px;
     color: #b0b1b3;
     line-height: 26px;
@@ -579,8 +593,9 @@ width: 654px;
     background-color: white;
 }
 #contact-footer #box-contact > div{
-    width: 495px;
-    margin: 0 auto;
+    max-width: 495px;
+    
+    margin: 0 30px;
 }
 #contact-footer #box-contact .two-col{
     display: flex;
@@ -595,7 +610,7 @@ width: 654px;
     line-height: 26px;
     color: #9fa1a3;
     text-transform: uppercase;
-    padding-top: 24px;
+    padding-top: 20px;
 }
 #contact-footer #box-contact .two-col div input{
     width: 100%;
@@ -712,3 +727,183 @@ footer > .container ul li:nth-child(5) a{
     background-image: url(./icon-s/e.png);
 
 }
+
+
+/** Responsive **/
+@media screen and (max-width: 960px){
+    #banner .container div  {
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    #banner .container ul {
+        position: static; /*static mac dinh */
+        text-align: center;
+        margin-top: 100px;
+    }
+    #about .container > div > div:first-child{
+
+        width: 49%;
+        
+        }
+    #about .container > div > div:last-child{
+            width: 49%;
+            
+        }
+    #contact-footer #box-contact .two-col{
+        display: block;
+    }
+    #contact-footer #box-contact .two-col div {
+        width: 100%;
+    }
+    #img-work{
+        height: 550px;
+    }
+    #whatwedo {
+        margin-bottom: 100px;
+    }
+    #future {
+        
+        padding-top: 60px ;
+        
+    }
+    #future h2 {
+        padding-bottom: 60px;
+    }
+    #future .container div > div > p {
+        margin-bottom: 80px;
+      
+    }
+}
+
+@media screen and (max-width: 845px){
+    header {
+        height: auto;
+    }
+
+    header .container {
+        display: block;  
+    }
+    header .container h1 {
+        text-align: center;
+    }
+    header .container ul {
+        height: auto;
+    }
+    #team-list > div {
+        width: calc((100% - 40px) / 4); 
+    }
+    #work {
+        padding-top: 60px;
+    }
+    #work .container h2{
+        padding-bottom: 60px;
+    }
+    #img-work{
+        height: 400px;
+    }
+    #work .container div > div > .mask h4{
+        font-size: 15px;
+        line-height: 60px;
+        height: 60px;
+
+    }
+    #whatwedo div ul li img {
+        padding-top: 60px;
+    }
+}
+
+@media screen and (max-width: 768px){
+   header h1 {
+       line-height: 50px;
+   }
+   header ul li {
+       line-height: 50px;
+   }
+   #banner {
+       height: 530px;
+   }
+
+
+   #about .container {
+    margin-top: 35px;
+    }
+   #banner .container div {
+    max-width: 700px;
+    padding-top: 100px;
+   }
+   #about .container > div {
+    display: block;
+    margin-top: 30px;
+    }
+    #about .container > div > div:first-child{
+
+        width: 100%;
+        
+        }
+    #about .container > div > div:last-child{
+            width: 100%;
+            margin: 20px 0;
+        }
+    #about ul{
+        text-align: center;
+    }
+    #team {
+        padding-bottom:50px ;
+    }
+    #team.container h2 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    #team-list > div {
+        width: calc((100% - 40px) / 2); 
+        margin-bottom: 10px;
+    }
+    #work {
+        padding-top: 40px;
+    }
+    #work .container h2{
+        padding-bottom: 40px;
+    }
+    #img-work{
+        height: auto;
+    }
+    #img-work > div{
+        max-width: calc((100% - 20px) / 2);
+    }
+    #whatwedo h2{
+        margin-top: 30px;
+    }
+    #whatwedo div ul li img {
+        padding-top: 30px;
+        padding-bottom: 15px;
+    }
+    #whatwedo {
+        margin-bottom: 50px;
+    }
+    #future {
+        
+        padding-top: 40px ;
+        
+    }
+    #future h2 {
+        padding-bottom: 40px;
+    }
+    #future .container > div{
+        display: block;
+    }
+    #future .container div > div{
+        width: 100%;
+        text-align: center;  
+    }
+    #future .container div > div > p {
+        margin-bottom: 0px;
+        padding-bottom: 60px;
+      
+    }
+    #future .container div > div > h4 {
+        margin-top: 20px;
+    }
+}
+
