@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    
+
 }
 h2{
     font-size: 36px;
@@ -66,11 +66,28 @@ header .container ul li a{
     border-radius: 3px;
     margin-left:16px ;
     font-size: 14px;
-    
-   
-    
-    
 }
+ 
+header .container label{
+    display: none !important; 
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height:60px ;
+    padding: 0 10px;
+}
+header .container input {
+    display: none;
+}
+header .container input:checked ~ ul{
+    display: block;
+}
+header .container input:checked ~ label{
+    background-color: rgb(49, 44, 44);
+}
+
+
 header .container ul li a:hover{
    border-color: #6a7172;
 }
@@ -350,8 +367,8 @@ width: 58%;
     justify-content: center;
     position: absolute;
     display: none;
-    top: 125px;
-    left: 59px;
+    top: calc(50% - 62px) ;
+    left: calc(50% - 75px);
 }
 #team-list > div > .mark ul{
     letter-spacing: -3px;
@@ -440,7 +457,7 @@ width: 58%;
    width: 100%;
    line-height: 60px;
    background-color: #292f36;
-   text-indent: 20px;
+   text-indent: 5%;
 
 }
 
@@ -557,7 +574,7 @@ width: 58%;
     padding-bottom: 61px;
 }
 #infor-contact{
-    max-width: 555px;
+    width: 49%;
 }
 #infor-contact > h2 {
     font-size: 20px;
@@ -587,15 +604,14 @@ width: 58%;
     display: flex;
 }
 #contact-footer #box-contact {
-    width: 555px;
+    width: 50%;
     height: 490px;
     margin-top: -130px;
     background-color: white;
 }
 #contact-footer #box-contact > div{
-    max-width: 495px;
-    
-    margin: 0 30px;
+    width: 100%;
+    padding: 0 30px;
 }
 #contact-footer #box-contact .two-col{
     display: flex;
@@ -857,7 +873,7 @@ footer > .container ul li:nth-child(5) a{
         margin-bottom: 30px;
     }
     #team-list > div {
-        width: calc((100% - 40px) / 2); 
+        width: calc((100% - 20px) / 2); 
         margin-bottom: 10px;
     }
     #work {
@@ -905,5 +921,124 @@ footer > .container ul li:nth-child(5) a{
     #future .container div > div > h4 {
         margin-top: 20px;
     }
+    header .container ul li a{
+    
+        margin-left: 7px;
+    
+    }
 }
+@media screen and (max-width: 680px){
+    header .container{
+        display: flex;
+    }
 
+    header .container h1 {
+        text-align: left;
+        line-height: 60px;
+    }
+    header .container label {
+        display: inline-block !important;
+    }
+    header .container ul{
+        display: none;
+        position: absolute;
+        background:black ;
+        z-index: 100;
+        top:60px;
+        right: 0;
+        width: 50%;
+        text-align: center;
+        font-size: 30px;
+        
+
+    }
+    header .container ul li {
+        display: block;
+        
+    }
+    header .container ul li a{
+        width: 98%;
+        height: 100%;
+        padding: 20px 0;
+        margin: 2px 0 !important;
+       
+    }
+}
+@media screen and (max-width: 640px){
+    h2{
+        font-size: 30px !important;
+    }
+    header .container ul li a{
+    
+        margin-left: 3px;
+    }
+    #infor-contact > h2 {
+        padding: 30px 0;
+    }
+
+    #contact-footer #flex-box {
+        display: block;
+ 
+    }
+    #contact-footer #box-contact {
+        margin-top: 0px;
+        width:100%;
+    }
+    #infor-contact{
+        width: 100%;
+    }
+    #contact-footer #box-contact > div{
+        width:  100%;
+        padding: 0 5px;
+    }
+    footer > .container > h2 {
+        display: none;
+    }
+    footer > .container > ul {
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 580px){
+    #whatwedo div ul li{
+        flex-basis: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: unset;
+        justify-content: space-between;
+        margin: 15px 0px;
+        vertical-align: middle;
+    }
+    #whatwedo div ul li > div {
+      max-width: 79%;
+    }
+    #whatwedo div ul li > img {
+        max-width: 20%;
+        display: block;
+        padding: unset;
+       max-height: 65px;
+       
+    }
+    #whatwedo div ul li p {
+        padding-top: 0px;
+    }
+}
+@media screen and (max-width: 480px){
+    #team-list > div {
+        width: 100%; 
+        margin-bottom: 10px;
+    }
+    #img-work > div{
+       max-width: 100%;
+        margin-bottom: 10px;
+    }
+    #work {
+        padding-bottom: 30px;
+    }
+    #work .container > div > button{
+        margin-top:20px ;
+    }
+    #about ul li a {
+        width: 40px;
+        height: 40px;
+    }
+}
